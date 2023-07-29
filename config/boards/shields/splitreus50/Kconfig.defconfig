@@ -1,0 +1,20 @@
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_SPLITREUS50_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "SPLITREUS50"
+
+#config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SPLITREUS50_LEFT || SHIELD_SPLITREUS50_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
