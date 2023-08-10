@@ -7,7 +7,5 @@ on:
   workflow_dispatch:
 
 jobs:
-#  build:
-#    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-  build-no-sc:
-    uses: mannkind/zmk/.github/workflows/build-user-config.yml@no-sc-patch
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
