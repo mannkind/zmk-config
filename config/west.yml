@@ -2,14 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: splitencoder
-      url-base: https://github.com/infused-kim
-    - name: mannkind
-      url-base: https://github.com/mannkind
   projects:
     - name: zmk
-      remote: mannkind
-      revision: no-sc-patch
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
