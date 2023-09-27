@@ -67,7 +67,7 @@
             bindings = <
 &hrm TILDE ESC  &kp N1       &kp N2       &kp N3        &kp N4             &kp N5                                                    &kp N6             &kp N7              &kp N8        &kp N9       &kp N0          &kp BACKSPACE
 &kp TAB         &kp Q        &kp W        &kp F         &kp P              &kp G                                                     &kp J              &kp L               &kp U         &kp Y        &kp SEMI        &kp DEL
-&kp LCTRL       &hrm LGUI A  &kp R        &kp S         &kp T              &kp D                                                     &kp H              &kp N               &kp E         &kp I        &kp O           &kp SQT
+&kp LCTRL       &kp A        &kp R        &kp S         &kp T              &kp D                                                     &kp H              &kp N               &kp E         &kp I        &kp O           &kp SQT
 &kp LSHFT       &kp Z        &kp X        &kp C         &kp V              &kp B             &tog MACRO             &kp C_MUTE       &kp K              &kp M               &kp COMMA     &kp DOT      &kp FSLH        &kp RSHFT
                              &kp LCTRL    &kp LALT      &kp LEFT_GUI   &lt SYMBOL SPACE  &lt FUNC ENTER         &lt FUNC ENTER    &lt NAV BACKSPACE     &kp RIGHT_GUI       &kp RALT      &kp RCTRL
             >;
