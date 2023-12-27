@@ -6,11 +6,12 @@
 
 #define ___ &trans
 #define BASE 0
-#define NAV 1
+#define GAME 1
 #define MACRO 2
 #define SYMBOL 3
-#define NUM 4
-#define FUNC 5
+#define NAV 4
+#define NUM 5
+#define FUNC 6
 
 // urob includes (https://github.com/urob/zmk-nodefree-config)
 
@@ -61,7 +62,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak_layer {
+        colemak {
             label = "Base";
             bindings = <
                             &kp N1       &kp N2       &kp N3        &kp N4         &kp N5                                                &kp N6             &kp N7        &kp N8        &kp N9       &kp N0 
@@ -73,14 +74,25 @@
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z) &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-macro {
+        game {
+            label = "Game";
+            bindings = <
+                     &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans 
+        &trans       &trans  &trans  &kp E   &kp R   &kp T                           &kp Y   &kp U   &kp I   &kp O   &kp P     &trans
+&trans  &trans       &trans  &kp S   &kp D   &kp F   &kp G                           &trans  &kp J   &kp K   &kp L   &kp SEMI  &trans   &trans
+        &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N   &trans  &trans  &trans  &trans
+                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        macro {
             label = "Macro";
             bindings = <
-                     &bt BT_SEL 0        &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                  &trans  &trans  &trans  &trans  &trans 
-        &trans       &trans              &trans         &trans        &trans        &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &kp LC(LS(ESCAPE))  &kp LS(LG(S))  &trans        &trans        &trans                      &trans  &trans  &trans  &trans  &trans  &trans   &trans
-        &trans       &trans              &trans         &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                                        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans
+                     &bt BT_SEL 0        &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                     &trans  &trans  &trans  &trans  &trans 
+        &trans       &trans              &trans         &trans        &trans        &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &kp LC(LS(ESCAPE))  &kp LS(LG(S))  &trans        &trans        &trans                         &trans  &trans  &trans  &trans  &trans  &trans   &trans
+        &trans       &trans              &trans         &trans        &trans        &trans      &trans  &tog GAME  &trans  &trans  &trans  &trans  &trans  &trans
+                                                        &trans        &trans        &trans      &trans  &trans     &trans  &trans  &trans
             >;
         };
 
