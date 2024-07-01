@@ -2,11 +2,21 @@
 include:
   - board: nice_nano_v2
     shield: settings_reset
+
   # Solfe 2.0w
   - board: nice_nano_v2
     shield: sofle_left nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: sofle_right nice_view_adapter nice_view
+
+  # Solfe Dongle 2.0w
+  - board: nice_nano_v2
+    shield: sofle_dongle nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: sofle_dongle_left nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: sofle_dongle_right nice_view_adapter nice_view
+
   # Corax56
   - board: nice_nano_v2
     shield: corax56_left nice_view_adapter nice_view
