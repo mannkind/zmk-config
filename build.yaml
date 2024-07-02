@@ -2,16 +2,12 @@
 include:
   - board: nice_nano_v2
     shield: settings_reset
-  - board: nrf52840_mdk_usb_dongle
-    shield: settings_reset
   # Solfe 2.0w
   - board: nice_nano_v2
     shield: sofle_left nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: sofle_right nice_view_adapter nice_view
   # Solfe Dongle 2.0w
-  - board: nrf52840_mdk_usb_dongle
-    shield: sofle_dongle nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: sofle_dongle nice_view_adapter nice_view
   - board: nice_nano_v2
