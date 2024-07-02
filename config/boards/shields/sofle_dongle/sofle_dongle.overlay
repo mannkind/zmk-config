@@ -16,3 +16,19 @@
         , <&pro_micro 19 GPIO_ACTIVE_HIGH>
         ;
 };
+
+&pro_micro_i2c {
+    status = "disabled";
+};
+
+&nice_view_spi {
+	status = "disabled";
+}
+
+&right_encoder {
+    status = "disabled";
+};
+
+&left_encoder {
+    status = "disabled";
+};
