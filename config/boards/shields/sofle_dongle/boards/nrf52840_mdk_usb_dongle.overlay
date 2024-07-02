@@ -22,6 +22,10 @@
 
 };
 
-&pro_micro_i2c {
+nice_view_spi: &spi0 {
+    status = "disabled";
+}
+
+pro_micro_i2c: &i2c0 {
     status = "disabled";
 };
