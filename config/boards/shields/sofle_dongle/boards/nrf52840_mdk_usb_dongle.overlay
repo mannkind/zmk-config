@@ -5,6 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "arduino_pro_micro_pins.dtsi"
 
 / {
 
@@ -22,10 +23,6 @@
 
 };
 
-nice_view_spi: &spi0 {
-    status = "disabled";
-}
-
-pro_micro_i2c: &i2c0 {
+&pro_micro_i2c {
     status = "disabled";
 };
