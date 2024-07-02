@@ -21,10 +21,6 @@
     status = "disabled";
 };
 
-&nice_view_spi {
-	status = "disabled";
-}
-
 &right_encoder {
     status = "disabled";
 };
