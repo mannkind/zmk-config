@@ -6,11 +6,17 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
+config ZMK_USB
+	default y
+
+endif # SHIELD_CORAX56_LEFT
 
 if SHIELD_CORAX56_LEFT || SHIELD_CORAX56_RIGHT
 
 config ZMK_SPLIT
     default y
 
-endif
+config ZMK_BLE
+	default y
+
+endif # SHIELD_CORAX56_LEFT || SHIELD_CORAX56_RIGHT

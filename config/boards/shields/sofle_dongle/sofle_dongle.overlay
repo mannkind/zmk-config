@@ -5,15 +5,3 @@
  */
 
 #include "sofle_dongle.dtsi"
-
-&pro_micro_i2c {
-    status = "disabled";
-};
-
-&right_encoder {
-    status = "disabled";
-};
-
-&left_encoder {
-    status = "disabled";
-};
