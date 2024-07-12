@@ -134,11 +134,11 @@
         colemak {
             display-name = "Colemak";
             bindings = <
-&hm_l TILDE ESC         &kp N1  &kp N2         &kp N3        &kp N4        &kp N5                               &kp N6         &kp N7        &kp N8        &kp N9         &kp N0    &kp BACKSPACE
-&kp TAB                 &kp Q   &kp W          &kp F         &kp P         &kp G                                &kp J          &kp L         &kp U         &kp Y          &kp SEMI  &kp SQT
-&mt LEFT_CONTROL ENTER  &kp A   &hm_l LCTRL R  &hm_l LALT S  &hm_l LGUI T  &kp D                                &kp H          &hm_r RGUI N  &hm_r RALT E  &hm_r RCTRL I  &kp O     &mt RCTRL ENTER
-&kp LSHFT               &kp Z   &kp X          &kp C         &kp V         &kp B      &tog MACRO    &kp C_MUTE  &kp K          &kp M         &kp COMMA     &kp DOT        &kp FSLH  &kp RSHFT
-                                &kp LALT       &kp LGUI      &mo FUNC      &kp SPACE  &kp TAB       &kp DEL     &kp BACKSPACE  &mo SYMBOL    &kp RGUI      &kp RALT
+&hm_l TILDE ESC  &kp N1  &kp N2         &kp N3        &kp N4        &kp N5                               &kp N6         &kp N7        &kp N8        &kp N9         &kp N0    &kp BACKSPACE
+&kp TAB          &kp Q   &kp W          &kp F         &kp P         &kp G                                &kp J          &kp L         &kp U         &kp Y          &kp SEMI  &kp SQT
+&mt LCTRL ENTER  &kp A   &hm_l LCTRL R  &hm_l LALT S  &hm_l LGUI T  &kp D                                &kp H          &hm_r RGUI N  &hm_r RALT E  &hm_r RCTRL I  &kp O     &mt RCTRL ENTER
+&kp LSHFT        &kp Z   &kp X          &kp C         &kp V         &kp B      &tog MACRO    &kp C_MUTE  &kp K          &kp M         &kp COMMA     &kp DOT        &kp FSLH  &kp RSHFT
+                         &kp LALT       &kp LGUI      &mo FUNC      &kp SPACE  &kp TAB       &kp DEL     &kp BACKSPACE  &mo SYMBOL    &kp RGUI      &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z) &inc_dec_kp C_VOL_DN C_VOL_UP>;
