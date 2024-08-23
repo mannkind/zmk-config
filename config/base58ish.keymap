@@ -155,7 +155,7 @@
             bindings = <
         X_LT             &kp N1         &kp N2         &kp N3        &kp N4        &kp N5                                  &kp N6         &kp N7        &kp N8        &kp N9         &kp N0    X_RT
         &kp TAB          &kp Q          &kp W          &kp F         &kp P         &kp G                                   &kp J          &kp L         &kp U         &kp Y          &kp SEMI  &kp SQT
-X_LM1_W &mt LCTRL ENTER  &kp A          &hm_l LCTRL R  &hm_l LALT S  &hm_l LGUI T  &kp D                                   &kp H          &hm_r RGUI N  &hm_r RALT E  &hm_r RCTRL I  &kp O     &mt RCTRL ENTER  X_RM1_W
+X_LM1_W &mt LCTRL ENTER  &kp A          &kp R          &kp S         &kp T         &kp D                                   &kp H          &kp N         &kp E         &kp I          &kp O     &mt RCTRL ENTER  X_RM1_W
         &kp LSHFT        &kp Z          &kp X          &kp C         &kp V         &kp B      &tog 2        &kp C_MUTE     &kp K          &kp M         &kp COMMA     &kp DOT        &kp FSLH  &kp RSHFT
                                         X_LH           &kp LGUI      &mo 4         &kp SPACE  &kp TAB       &kp DEL        &kp BACKSPACE  &mo 3         &kp RGUI      X_RH
             >;
