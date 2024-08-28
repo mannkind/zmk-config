@@ -10,12 +10,6 @@
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 #endif
 
-// Define the solfe extra keys
-#define X_LT &hm_l TILDE ESC
-#define X_LH &kp LALT
-#define X_RT &kp BACKSPACE
-#define X_LH &kp RALT
-
 // Define tapping terms
 
 #if !defined HM_TAPPING_TERM
@@ -38,30 +32,6 @@
 #endif
 #if !defined KEYS_T
     #define KEYS_T LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3
-#endif
-
-#if !defined X_LT 
-    #define X_LT
-#endif
-
-#if !defined X_LM1_W 
-    #define X_LM1_W
-#endif
-
-#if !defined X_LH
-    #define X_LH
-#endif
-
-#if !defined X_RT 
-    #define X_RT
-#endif
-
-#if !defined X_RM1_W 
-    #define X_RM1_W
-#endif
-
-#if !defined X_RH
-    #define X_RH
 #endif
 
 / {
@@ -164,11 +134,8 @@
         colemak {
             display-name = "Colemak";
             bindings = <
-        X_LT             &kp N1         &kp N2         &kp N3        &kp N4        &kp N5                                  &kp N6         &kp N7        &kp N8        &kp N9         &kp N0    X_RT
+        &kp ESC             &kp N1         &kp N2         &kp N3        &kp N4        &kp N5                                  &kp N6         &kp N7        &kp N8        &kp N9         &kp N0    &kp BACKSPACE
         &kp TAB          &kp Q          &kp W          &kp F         &kp P         &kp G                                   &kp J          &kp L         &kp U         &kp Y          &kp SEMI  &kp SQT
-X_LM1_W &mt LCTRL ENTER  &kp A          &kp R          &kp S         &kp T         &kp D                                   &kp H          &kp N         &kp E         &kp I          &kp O     &mt RCTRL ENTER  X_RM1_W
-        &kp LSHFT        &kp Z          &kp X          &kp C         &kp V         &kp B      &tog 2        &kp C_MUTE     &kp K          &kp M         &kp COMMA     &kp DOT        &kp FSLH  &kp RSHFT
-                                        X_LH           &kp LGUI      &mo 4         &kp SPACE  &kp TAB       &kp DEL        &kp BACKSPACE  &mo 3         &kp RGUI      X_RH
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z) &inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -177,44 +144,32 @@ X_LM1_W &mt LCTRL ENTER  &kp A          &kp R          &kp S         &kp T      
         game {
             display-name = "Game";
             bindings = <
-        X_LT    &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    X_RT
+        &kp ESC    &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    &kp BACKSPACE
         &trans  &trans  &trans  &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I   &kp O   &kp P     &trans
-X_LM1_W &trans  &trans  &kp S   &kp D   &kp F   &kp G                     &trans  &kp J   &kp K   &kp L   &kp SEMI  &trans  X_RM1_W
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N   &trans  &trans  &trans  &trans    &trans
-                        X_LH    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  X_RH
             >;
         };
 
         macro {
             display-name = "Macro";
             bindings = <
-        X_LT         &bt BT_SEL 0        &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                       &trans  &trans  &trans  &trans  &trans  X_RT
+        &kp ESC         &bt BT_SEL 0        &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                       &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE
         &trans       &trans              &trans         &trans        &trans        &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-X_LM1_W &trans       &kp LC(LS(ESCAPE))  &kp LS(LG(S))  &trans        &trans        &trans                           &trans  &trans  &trans  &trans  &trans  &trans  X_RM1_W
-        &trans       &trans              &trans         &trans        &trans        &trans      &trans    &tog 1     &trans  &trans  &trans  &trans  &trans  &trans
-                                         X_LH           &trans        &trans        &trans      &trans    &trans     &trans  &trans  &trans  X_RH
             >;
         };
 
         symbol {
             display-name = "Syms";
             bindings = <
-        X_LT    &trans     &trans     &trans    &trans    &trans                       &trans     &trans  &trans  &trans   &ext_power EP_TOG  X_RT
+        &kp ESC    &trans     &trans     &trans    &trans    &trans                       &trans     &trans  &trans  &trans   &ext_power EP_TOG  &kp BACKSPACE
         &trans  &kp EXCL   &kp AT     &kp LBRC  &kp RBRC  &kp PIPE                     &kp EQUAL  &kp N7  &kp N8  &kp N9   &kp ASTRK          &trans
-X_LM1_W &trans  &kp HASH   &kp DLLR   &kp LPAR  &kp RPAR  &kp GRAVE                    &kp MINUS  &kp N4  &kp N5  &kp N6   &kp PLUS           &trans  X_RM1_W
-        &trans  &kp PRCNT  &kp CARET  &kp LBKT  &kp RBKT  &kp TILDE  &trans    &trans  &kp AMPS   &kp N1  &kp N2  &kp N3   &kp BSLH           &trans
-                           X_LH       &trans    &trans    &trans     &trans    &trans  &trans     &trans  &kp N0  X_RH
             >;
         };
 
         function {
             display-name = "Function";
             bindings = <
-        X_LT    &trans  &trans    &trans    &trans     &trans                       &trans  &kp F10  &kp F11  &kp F12  &trans  X_RT
+        &kp ESC    &trans  &trans    &trans    &trans     &trans                       &trans  &kp F10  &kp F11  &kp F12  &trans  &kp BACKSPACE
         &trans  &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP                    &trans  &kp F7   &kp F8   &kp F9   &trans  &trans
-X_LM1_W &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                    &trans  &kp F4   &kp F5   &kp F6   &trans  &trans  X_RM1_W
-        &trans  &trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans
-                        X_LH      &trans    &trans     &trans     &trans    &trans  &trans  &trans   &trans   X_RH
             >;
         };
     };
