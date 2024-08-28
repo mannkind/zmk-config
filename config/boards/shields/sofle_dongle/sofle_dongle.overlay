@@ -1,0 +1,7 @@
+/*
+ * Copyright (c) 2020 Ryan Cross
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "sofle_dongle.dtsi"
