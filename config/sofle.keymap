@@ -34,7 +34,7 @@
         &trans  &trans  &trans      &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I   &kp O     &kp P     &trans
         &trans  &trans  &kp S       &kp D   &kp F   &kp G                     &trans  &kp J   &kp K   &kp L     &kp SEMI  &trans  
         &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans  &kp N   &trans  &trans  &trans    &trans    &trans
-                        &kp LALT    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp RALT
+                        &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -45,7 +45,7 @@
         &trans       &trans              &trans         &trans        &trans        &trans                           &trans  &trans  &trans  &trans  &trans  &trans
         &trans       &kp LC(LS(ESCAPE))  &kp LS(LG(S))  &trans        &trans        &trans                           &trans  &trans  &trans  &trans  &trans  &trans  
         &trans       &trans              &trans         &trans        &trans        &trans      &trans    &tog 1     &trans  &trans  &trans  &trans  &trans  &trans
-                                         &kp LALT       &trans        &trans        &trans      &trans    &trans     &trans  &trans  &trans  &kp RALT
+                                         &trans         &trans        &trans        &trans      &trans    &trans     &trans  &trans  &trans  &trans
             >;
         };
 
@@ -56,7 +56,7 @@
         &trans  &kp EXCL   &kp AT     &kp LBRC  &kp RBRC  &kp PIPE                     &kp EQUAL  &kp N7  &kp N8  &kp N9   &kp ASTRK          &trans
         &trans  &kp HASH   &kp DLLR   &kp LPAR  &kp RPAR  &kp GRAVE                    &kp MINUS  &kp N4  &kp N5  &kp N6   &kp PLUS           &trans  
         &trans  &kp PRCNT  &kp CARET  &kp LBKT  &kp RBKT  &kp TILDE  &trans    &trans  &kp AMPS   &kp N1  &kp N2  &kp N3   &kp BSLH           &trans
-                           &kp LALT   &trans    &trans    &trans     &trans    &trans  &trans     &trans  &kp N0  &kp RALT
+                           &trans     &trans    &trans    &trans     &trans    &trans  &trans     &trans  &kp N0  &trans
             >;
         };
 
@@ -67,7 +67,7 @@
         &trans  &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP                    &trans  &kp F7   &kp F8   &kp F9   &trans  &trans
         &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                    &trans  &kp F4   &kp F5   &kp F6   &trans  &trans  
         &trans  &trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans
-                        &kp LALT  &trans    &trans     &trans     &trans    &trans  &trans  &trans   &trans   &kp RALT
+                        &trans    &trans    &trans     &trans     &trans    &trans  &trans  &trans   &trans   &trans
             >;
         };
     };
