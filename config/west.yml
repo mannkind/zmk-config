@@ -1,9 +1,14 @@
 manifest:
+  defaults:
+    remote: urob
+    revision: v0.1
+
   remotes:
-    - name: zmkfirmware
+    - name: upstream
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+
   projects:
     - name: zmk
       remote: urob
@@ -12,5 +17,6 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: v2
+  
   self:
     path: config
