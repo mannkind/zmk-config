@@ -8,5 +8,4 @@ on:
 
 jobs:
   build:
-    #uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    uses: zmkfirmware/unified-zmk-config-template/blob/main/.github/workflows/build.yml
+    uses: zmkfirmware/unified-zmk-config-template/blob/main/.github/workflows/build.yml@main
