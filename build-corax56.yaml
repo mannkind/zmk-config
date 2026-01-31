@@ -1,0 +1,10 @@
+---
+include:
+  - board: nice_nano@2.0.0
+    shield: settings_reset
+
+  # Corax56q
+  - board: nice_nano@2.0.0
+    shield: corax56_left nice_view
+  - board: nice_nano@2.0.0
+    shield: corax56_right nice_view

@@ -1,0 +1,10 @@
+---
+include:
+  - board: nice_nano@2.0.0
+    shield: settings_reset
+
+  # Sofle 2.0w (Non-Dongle)
+  - board: nice_nano@2.0.0
+    shield: sofle_left nice_view_adapter nice_view
+  - board: nice_nano@2.0.0
+    shield: sofle_right nice_view_adapter nice_view
